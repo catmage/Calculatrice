@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    User-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(130deg, #CDEDF9 30%, #FDB1AD 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    Flex-direction: column;
+}
+
+.container {
+    background-image: linear-gradient(to bottom right, #FFFFFFB3, #FFFFFF6B);
+    padding: 20px;
+}
+
+.container input {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 20px;
+}
+
+.allbtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #FFFFFF99;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    Border-radius: 10px;
+}
+
+.btn:active {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.btn:nth-child(12) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+.btn:nth-child(16) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
